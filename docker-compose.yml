@@ -1,12 +1,12 @@
 services:
   found-app:
-      build: .
-          container_name: found-app
-              restart: unless-stopped
-                  ports:
-                        - "3001:3000"
-                            environment:
-                                  # This is the secret topic you will subscribe to in the app
-                                        # Make it long and unguessable!
-                                              - NTFY_TOPIC=${NTFY_TOPIC}
+    build: .
+    container_name: found-app
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      # This is the secret topic you will subscribe to in the app
+      # Make it long and unguessable!
+      - NTFY_TOPIC=${NTFY_TOPIC}
                                               
