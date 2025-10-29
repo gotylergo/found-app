@@ -1,0 +1,9 @@
+{
+    "name": "found-app",
+    "version": "1.0.0",
+    "description": "A simple lost & found app.",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
