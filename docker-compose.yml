@@ -3,7 +3,11 @@ services:
     build: .
     container_name: found-app
     restart: unless-stopped
-    ports:
-      - "3001:3000"
     environment:
       - NTFY_TOPIC=${NTFY_TOPIC}
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
